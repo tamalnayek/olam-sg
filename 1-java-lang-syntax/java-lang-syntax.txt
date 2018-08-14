@@ -1,0 +1,281 @@
+
+
+-----------------------------------------------------------------------------
+1. project
+-----------------------------------------------------------------------------
+    project
+    |
+    |
+    |-------- p1  ( .java / .class )
+    |
+    |
+    |-------- p2
+    |   |
+    |   |------p21
+
+-----------------------------------------------------------------------------
+2. java file
+-----------------------------------------------------------------------------
+
+    PublicType.java
+    |----------------------------------------------
+    | // package declaration ( 1 )
+    | // import statements ( n )
+    |
+    | // public type  Name(class|interface|enum|annotation )  ( 1 )
+    |
+    | // default types ( n )
+    |----------------------------------------------
+
+-----------------------------------------------------------------------------
+3. package declaration
+-----------------------------------------------------------------------------
+
+  why we need ?
+
+    => to organize related java-files into 1 folder for better maintainence
+    => to avoid type-name collisions
+
+    syntax:
+
+    package root; 
+            root.sub1;
+            root.sub1.sub2;
+
+    general recommendation for package declaration:
+
+    e.g Employee.java  --> emp --> em --> olam --> com
+
+    package c-type.c-name-p-name.m-name;
+    e.g
+    package com.olam.em.emp;        
+
+-----------------------------------------------------------------------------
+4. import statement
+-----------------------------------------------------------------------------    
+
+e.g
+
+project
+|
+|-- p1 ( A.java , B.java )
+|
+|-- p2 ( C.java , D.java)
+|
+|-- p3 ( C.java )
+| |
+| |--- p31 ( E.java )
+|
+
+e.g
+
+file : A.java
+
+package p1;
+//import p2.C;
+//import p2.D;
+//or
+import p2.*;
+import p3.*;
+import p3.p31.*;
+public class A{
+    B b;
+    p3.C c;
+    D d;
+    E e;
+}
+
+-----------------------------------------------------------------------------
+OO ( object oriented  )
+-----------------------------------------------------------------------------    
+
+   what is object ?
+
+     - data,info,props,attr       ==> state
+     - work,oprn,func,method      ==> behav
+     - addr,loc,pointer,reference ==> identity
+
+     i.e object is sbi
+
+
+    what is class ?
+
+        description/template of similar objects
+        
+        class  ==> instances / objects
+
+-----------------------------------------------------------------------------
+
+    OO concepts
+
+    1. Interface / Abstraction
+       
+        why we need ?
+        -> easy to use/learn by dependent
+        -> loose coupling b/w dependent & dependency
+
+    2. Implementation / Encapsulation
+        
+        why we need ?
+        - hide complexity
+
+    3. Inheritance   
+        
+        why we need ?       
+         - to re-use/inherit common state & behav for generalized type to specilized types    
+
+    4. polymorsphism
+       
+        why we need ?
+        - on different strategy, obj should able to produce different results
+
+
+-----------------------------------------------------------------------------
+4. type syntax ( class | interface | enum | annotation )
+-----------------------------------------------------------------------------
+
+a. class-syntax
+
+ ___________      ___________     class  Name [extends] Base-Class {
+ [public   ]       [abstract]                 [implements] Interface1,Interface2,... 
+ [         ]       [final   ]        // state-definition ( variables )
+                   [strictfp]        // constructor
+                                     // behavior ( methods )
+                                     // inner types    
+-----------------------------
+[private]          [static]
+[       ]                          }
+[protected]
+[public ]
+
+-----------------------------------------------------------------------------
+
+
+b. interface-syntax
+
+___________   ____________ interface Name [extends] Interface1,Interface2,....{
+[public   ]                 // constant state
+[         ]                 // abstract behav
+                           }
+
+
+-----------------------------------------------------------------------------
+
+c. enum
+
+   why we need ?
+
+   ==> to group related constant values into one type
+
+    syntax:
+
+____________   ____________ enum Gender [implements] Interface1,Interface2,..{
+[public]                      MALE,FEMALE,OTHER;
+                              // constructor
+                              // methods 
+[      ]                    }
+
+-----------------------------------------------------------------------------
+
+d. annotation
+
+   why we need ?
+
+   ==> to describe java programming eleme
+   
+   
+   nts to another java-program,compiler,runtime
+
+   syntax:
+
+   ___________ ___________ @interface Name{
+                            // properties
+                           }
+
+
+-----------------------------------------------------------------------------
+5.state-definition ( variables )
+-----------------------------------------------------------------------------
+
+
+data-types
+
+    - simple/primitives   ===> values   e.g age        ( 8 ) ==> byte,short,int,long.float,double,char,boolean
+    - complex/reference  ===> objects  e.g person     ( 4 ) 
+
+
+e.g
+
+class Employee{
+    static String tnrName; // class variables
+    int id; // obj variable
+    void method(){
+        int loc;
+    }
+}    
+
+
+_____________ ___________   data-type varName = [value/object];
+[private]     [static]
+[       ]     [final ]
+[protected]   [transient]
+[public]      [volatile]
+
+    -local-var-
+--------------------------
+-Nil-          [final]
+
+
+
+
+-----------------------------------------------------------------------------
+6. method  ( behavior )
+-----------------------------------------------------------------------------
+
+ReturnType
+
+    - void
+    - primitive
+    - reference
+
+
+   ___________ ___________ ReturnType methodName([args]) [throws] Exception{
+   [private]    [static]            // A,R,L and assignment operation
+   [       ]    [final ]            // condition logic
+   [protected]  [synchronized]      // looping logic
+   [public  ]   [strictfp]          // invoke other behav
+                [abstract]             [return] [result]
+                [native]        }
+
+
+-----------------------------------------------------------------------------                
+
+
+Java Naming conventions
+--------------------------
+
+	keywords      ==> lower-case
+	package-names ==> lower-case
+    type-names    ==> pascal-case   e.g A____B____C____
+    var/method    ==> camel-case    e.g _____A____B____
+    constants     ==> upper-case
+    
+    identifier rules
+    
+    ==> must start with letter
+    ==> we use only these spcial chars : _ & $ 
+----------------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+
+
+  business-data / model / entity
+  ---------------------------------
+  
+  
+     - Account
+     
+     		- num
+     		- balance
+  
+  
+  
+  layer(s)
+  ----------------------------------
+  
+  1. data/repository layer    ==> persisting/data-accessing logic
+  
+  
+  		- AccountRepository
+  		
+  			- loadAccount(num)
+  			- updateAccount(account)
+ 
+  2. service/business layer   ==> processing logic
+  
+  		- TxrService
+  		
+  			- txr(amount,fromAccNum,toAccNum)
+  			
+ ---------------------------------- 			
+  
+  
+  
+  
+  
+   			

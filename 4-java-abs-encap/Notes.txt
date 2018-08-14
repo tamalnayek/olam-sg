@@ -1,0 +1,59 @@
+
+	---------------------------------------------------
+
+    1. Interface / Abstraction
+       
+        why we need ?
+        -> easy to use/learn by dependent
+        -> loose coupling b/w dependent & dependency
+
+    2. Implementation / Encapsulation
+        
+        why we need ?
+        - to hide complexity
+        
+   ---------------------------------------------------
+   
+   how to implement in java ?
+   
+   many ways 
+   
+   	-> class & interfaces
+   	-> using access specifiers & packages
+   	-> using set & get methods
+   	-> using proper OO principles & patterns
+   	
+   	
+   ---------------------------------------------------
+   
+   e.g
+   
+   	   TestDrive app
+   	   
+   	   	a. car
+   	   	     - move()
+   	   	     
+   	   	b. wheel     
+             - rotate()
+   
+   ---------------------------------------------------
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+        
