@@ -7,7 +7,6 @@ package com.em.emp;
 public class Employee {
 
 	// 1. variables
-
 	// a.class/static variable
 	public final static String COMP_NAME = "olam";
 	public static String tnrName;
@@ -20,7 +19,6 @@ public class Employee {
 	// 2.constructor
 
 	// 3. behav
-
 	// a.class/static behav
 	public static void doTeach() {
 		System.out.println(tnrName + " - doTeach()");
@@ -30,7 +28,6 @@ public class Employee {
 	public void doListenAndWork() {
 		System.out.println(name + " - listening");
 	}
-
 	// 4.inner-types
 
 }

@@ -4,10 +4,10 @@
 in java , obj creation is 2 step process
 
 
-
  step-1 : dynamic memory allocation from heap-memory ==> 'new'
  step-2 : fill that memory with obj's data           ==> constructor
  
  
+syntax:
  
-   Type ref= new Constructor()
+Type ref= new Constructor()
