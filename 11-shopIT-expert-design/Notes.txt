@@ -1,0 +1,26 @@
+
+
+-----------------------------------------------------------------
+
+shopIT
+----------
+    
+    1. Billing     : getTotalPrice(cart) : double
+    2. PriceMatrix : getPrice(item)      : double 
+    
+    
+-----------------------------------------------------------------    
+    
+OO principles    
+    
+S.O.L.I.D. 
+	
+	S — Single responsibility principle
+	O — Open for extension, closed for modification principle
+	L — Liskov substitution principle
+	I — Interface segregation principle
+	D — Dependency Inversion principle    
+	
+-----------------------------------------------------------------	
+
+

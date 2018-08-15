@@ -1,0 +1,22 @@
+
+
+-----------------------------------------------------------------
+
+shopIT
+----------
+    
+    1. Billing     : getTotalPrice(cart) : double
+    2. PriceMatrix : getPrice(item)      : double 
+    
+    
+-----------------------------------------------------------------    
+    
+S.O.L.I.D. STANDS FOR:
+	
+	S — Single responsibility principle
+	O — Open for extension, closed for modification principle
+	L — Liskov substitution principle
+	I — Interface segregation principle
+	D — Dependency Inversion principle    
+	
+-----------------------------------------------------------------	
