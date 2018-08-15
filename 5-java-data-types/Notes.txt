@@ -1,0 +1,74 @@
+
+
+java - data types
+-------------------
+
+//-----------------------------------------------------------------
+   types of data
+//-----------------------------------------------------------------
+   
+   1. simple / primitives types  ==> values
+   
+   		a. signed
+   			i. integral
+   				byte  ( 8  )  i.e -2^n-1 to 2^n-1 -1  e.g -128 to 127	
+   			    short ( 16 )
+   			    int   ( 32 )
+   			    long  ( 64 ) 
+   			ii. real
+   			    float  ( 32 )
+   			    double ( 64 )
+   		b. un-signed
+   		        char   ( 16 )
+   		c. boolean
+   		         boolean ( 1 )
+   		
+   2. complex / reference types  ==> objects
+   
+   e.g
+   	
+   	   - employee
+   	   - product
+   	   - person
+   	   - mobile
+   	   
+  //----------------------------------------------------------------- 
+  
+  
+  variable scope ( life of variable in memory )
+  
+  
+  - class scope
+  - obj scope
+  - block scope
+  
+  
+  
+  //----------------------------------------------------------------- 
+  
+  
+  
+   how to use variables in methods?
+   
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  	   
+   	   
+   	   
+   	   		
+   		
+   		
+   		
+   		

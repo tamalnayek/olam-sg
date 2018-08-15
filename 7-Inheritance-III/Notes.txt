@@ -1,0 +1,16 @@
+
+
+override
+-----------
+
+  re-implementing super-class bahav with different logic as u need
+  
+  
+  coding rules
+  -------------
+  
+  must be same 
+  
+  		==> method-name
+  		==> type &  number & order of arguments
+  		==> return-type

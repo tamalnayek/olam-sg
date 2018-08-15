@@ -1,0 +1,61 @@
+
+
+inheritance
+--------------
+
+
+   re-use/inherit common state & behav from more generalized-type to specialized-types
+   
+   
+   why we need ?
+   
+   	==> re-use 
+   	==> easy to extend with new-features
+   	==> we can bring unified arch b/w different objects
+   	
+   	
+   	-----------------------------------------------
+   	
+   	terms
+   	
+   	base/super/parent/generalized type
+   	derived/sub/child/specialized type
+   	
+   	-----------------------------------------------
+   	
+   	
+   	types
+   	
+   	
+   			1. single-level  ==> A <-- B
+   			2. multi-level   ==> A <-- B <--- C 
+   			3. multiple      ==> A,B <--- C           ( not supported in java language )
+   			
+   			 
+   	
+   	-----------------------------------------------
+   	
+   	
+   	when to use inheritance ?
+   	
+   	if 2 types having 'IS-A' relationship
+   	
+   	
+   	e.g
+   	
+   		TechEmployee is a Employee
+   		Veg is a Food
+   		
+   	-----------------------------------------------
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
