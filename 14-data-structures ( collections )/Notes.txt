@@ -1,0 +1,133 @@
+
+
+
+  data-structures
+  -----------------
+  
+   ==> way of organizing memory for data to do CRUDSS operations ( algorithms )
+   
+   
+   
+   types
+   -------
+   
+   	 1. primary   ==> hold single data-element under one memory-address
+   	 
+   	 		e.g int a=12;
+   	 
+   	 2. secondary ==> holds multiple data-eleemnts
+   	 
+   	 	 a. linear
+   	 	 
+   	 	 		- array
+   	 	 		- linked list
+   	 	 		- stack
+   	 	 		- queue
+   	 	 		- hashtable
+   	 	 		...
+   	 	 
+   	     b. non-linear 
+   	     
+   	     		- tree
+   	     		- graph
+   	     		...
+   	    
+   	    -------------------------------------------------------
+   	    analysis
+   	    	=> time complexity
+   	    	=> space complexity
+   	    -------------------------------------------------------
+   	    
+   	    collection F.W
+   	    -----------------
+   	    
+   	    ==> ready-made secondary data-structures from java-community
+   	    
+   	    
+   	    ref : https://docs.oracle.com/javase/tutorial/collections/intro/index.html
+   	    
+   	    
+   	    -------------------------------------------------------
+   	    types of collections ( data structure )
+   	    -----------------------------------------------------
+   	    
+   	    1. list
+   	    
+   	    	=> ordered o/p
+   	    	=> index based
+   	    	=> can hold duplicates
+   	    
+   	    2. set
+   	    
+   	    	=> No Index
+   	    	=> uniqueue
+   	    
+   	    3. map
+   	    
+   	        user-identifier ( key ) +  value
+   	        
+   	   -----------------------------------------------------   
+   	   
+   	   
+   	   collection F.W classes
+   	   
+   	   
+   	   1. list
+   	   
+   	      - Vector     => dynamic-array   ( thread-safe )
+   	   	  - ArrayList  => dynamic-array
+   	   	  - LinkedList => double-linked-list
+   	   	  
+   	   2. set
+   	   
+   	   	  - TreeSet    => b-tree                --> sorted
+   	   	  - HashSet    => hashtable             --> un-ordered
+   	   	  - LinkedHashSet => dll + hashtable  	--> ordered	  
+   	   	  
+   	   3. Map
+   	      
+   	   	  - TreeMap    => b-tree                --> sorted
+   	   	  - HashMap    => hashtable             --> un-ordered
+   	   	  - LinkedHashMap => dll + hashtable  	--> ordered	
+   	   
+   	     e.g
+   	     
+   	     map
+   	     
+   	     {
+   	     
+   	     products : value1,
+   	     reviews : value2,
+   	     user:users
+   	     
+   	     }
+   	    
+   	    
+   	    ----------------------------------------------------------------
+   	    
+   	    ==> collect data from any data-source
+   	    
+   	    // data-layer
+   	    ==> store data in list/set/map    
+   	    
+   	    // service-layer
+   	    ==> modify data if required..
+   	    
+   	    //web layer
+   	    ==> convert same data into JSON/XML/HTML  , send to any reporting lib
+   	    
+   	    
+   	    
+   	    ----------------------------------------------------------------
+   	    
+   	    
+   	    
+   	    
+   	    
+   	    
+   	    
+   	    
+   	    
+   	     		
+   	 
+   	 		
