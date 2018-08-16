@@ -1,0 +1,73 @@
+
+
+Exception:
+
+
+	 ==> un-expected disturb in program normal flow
+	 
+	 
+	 reason for exceptions
+	 
+	 --> invalid input
+	 --> io 
+	 --> sql 
+	 --> net
+	 
+	 ...............
+	 
+	 
+	 -----------------------------------------------
+	 
+	 ref: https://docs.oracle.com/javase/tutorial/essential/exceptions/advantages.html
+	 
+	 
+	 Advantages of Exceptions
+	 
+	 
+	 Advantage 1: Separating Error-Handling Code from "Regular" Code
+	 Advantage 2: Propagating Errors Up the Call Stack
+	 Advantage 3: Grouping and Differentiating Error Types
+	 
+	 -------------------------------------------------
+	 
+	 
+	 How to handle Exceptions?
+	 
+	 - throw
+	 - throws
+	 - try,catch,finally
+	 
+	 
+	 -------------------------------------------------
+	 
+	 imp-notes:
+	 
+	 
+	 ==> every exception is an object in java-lang,
+	     which contains details of exception
+	 ==> failing to catch exception, 
+	     always JRE will catch exception i.e abort thread
+	 
+	 soln:
+	 
+	 ==> we should catch
+	 
+	 -------------------------------------------------
+	 
+	 
+	 types of exceptions
+	 
+	 
+	 - checked
+	 - un-checked
+	 
+	 
+	 -------------------------------------------------
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
