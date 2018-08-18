@@ -1,0 +1,25 @@
+
+
+
+
+
+ java programming
+ --------------------
+ 
+ 
+    your-code    +   other-code ( server, lib , framework , tools ,.. )
+    i.e
+    component    + container 
+    
+    -------------------------------------------------
+    
+    annotation:
+    
+    why wee need?
+    
+    	=> describe your programming elements to other programs 
+    	
+   
+   ref : https://docs.oracle.com/javase/tutorial/java/annotations/ 	
+   
+   -------------------------------------------------
