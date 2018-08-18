@@ -1,0 +1,16 @@
+2018-08-17 16:04:44 INFO  bank-txr:18 - JdbcAccountRepository instance created
+2018-08-17 16:04:44 INFO  bank-txr:15 - SGTxrService instance created
+2018-08-17 16:04:44 INFO  bank-txr:20 - accountRepository instance injected to SGTxrService
+2018-08-17 16:04:44 INFO  bank-txr:26 - txr initiated...
+2018-08-17 16:04:44 INFO  bank-txr:23 - loading account - 1
+2018-08-17 16:04:45 INFO  bank-txr:23 - loading account - 2
+2018-08-17 16:04:45 WARN  bank-txr:46 - Txr failed.
+2018-08-17 16:05:28 INFO  bank-txr:18 - JdbcAccountRepository instance created
+2018-08-17 16:05:28 INFO  bank-txr:15 - SGTxrService instance created
+2018-08-17 16:05:28 INFO  bank-txr:20 - accountRepository instance injected to SGTxrService
+2018-08-17 16:05:28 INFO  bank-txr:26 - txr initiated...
+2018-08-17 16:05:28 INFO  bank-txr:23 - loading account - 1
+2018-08-17 16:05:29 INFO  bank-txr:23 - loading account - 2
+2018-08-17 16:05:29 INFO  bank-txr:67 - udated account - 1
+2018-08-17 16:05:29 INFO  bank-txr:67 - udated account - 2
+2018-08-17 16:05:29 INFO  bank-txr:44 - txr success...

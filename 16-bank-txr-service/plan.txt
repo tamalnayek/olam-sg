@@ -1,0 +1,46 @@
+
+
+
+
+    -------------------------------------------------------------
+    database
+    -----------
+        => SQL-server / oracle / mysql   : SQL
+    -------------------------------------------------------------
+    back-end-appln
+    ---------------       
+    IDE
+        => eclipse | intellij idea 
+    language(s):
+        => java 
+    build-tools
+        => Maven
+    unit-testing F.W
+        => junit    
+
+    ----------------------------------------------------------------- 
+
+    model/business data
+
+        - User/Customer
+        - Account
+        - Txn
+
+    ----------------------------------------------------------------- 
+
+    Layer(s)  ==> logical segmentation of application code
+    
+    -----------------------------------------------------------------
+
+    desktop/web/enterprise appln
+
+     1. data/repository layer   ==> data-accessing logic 
+     2. service/business layer  ==> business logic     
+
+    -------------------------------------------------------------------
+
+    use-case:
+
+             txr(amount,String fromAccNum,String toAccNum)
+             
+    -------------------------------------------------------------------         
