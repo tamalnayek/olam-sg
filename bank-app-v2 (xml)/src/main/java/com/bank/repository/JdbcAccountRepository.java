@@ -15,29 +15,18 @@ public class JdbcAccountRepository implements AccountRepository {
 
 	private static Logger logger = Logger.getLogger("bank");
 
-	private JdbcTemplate jdbcTemplate;
 
 	public JdbcAccountRepository(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
 		logger.info("JdbcAccountRepository instance created...");
 	}
 
 	public Account load(String num) {
 		logger.info("loading account - " + num);
-		String sql = "select * from ACCOUNT where num=?";
-		return jdbcTemplate.queryForObject(sql, new RowMapper<Account>() {
-			public Account mapRow(ResultSet rs, int rowNum) throws SQLException {
-				Account account = new Account();
-				account.setNum(rs.getString("num"));
-				account.setBalance(rs.getDouble("balance"));
-				return account;
-			}
-		}, num);
+		return null;
 	}
 
 	public void update(Account account) {
 		logger.info("updating account");
-		jdbcTemplate.update("update ACCOUNT set balance=? where num=?", account.getBalance(), account.getNum());
 	}
 
 }
