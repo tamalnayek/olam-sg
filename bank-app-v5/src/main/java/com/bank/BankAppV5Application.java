@@ -21,11 +21,9 @@ public class BankAppV5Application {
 		context = SpringApplication.run(BankAppV5Application.class, args);
 		System.out.println("----------------------------------");
 
-		TxnService txnService = context.getBean(TxnService.class);
-		List<Txn> list = txnService.getTxns("2", 100.0);
-		for (Txn txn : list) {
-			System.out.println(txn);
-		}
+		TxrService txrService=context.getBean(TxrService.class);
+		txrService.txr(900, "2", "1");
+		
 
 		System.out.println("----------------------------------");
 		context.close();

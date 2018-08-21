@@ -1,0 +1,50 @@
+
+
+
+  java - web appln
+  ------------------------
+  
+     - servlet & jsp
+     
+   ---------------------------------------------------------  
+     
+     arch : MVC
+     
+     		M --> model
+     		V --> view
+     		C --> controller
+     		
+     		
+    advantages of MVC arch
+    
+    	==> clear separation
+    	==> easy to develope
+    	==> east to test
+    	==> easy to extend
+    	==> rapid/parallel dev
+    	... 		
+     		
+   ---------------------------------------------------------
+   
+   JEE - MVC frameworks
+   
+   
+   - struts  => ASF  ( EOL )
+   - struts 2 ==> ASF	
+   
+   
+   - JSF
+   
+   		- primefaces
+   		- richfaces
+   		- oracle ADF
+   		...
+   		
+   - Spring MVC			  ( most use )
+   
+   
+   
+   
+   
+   
+     		
