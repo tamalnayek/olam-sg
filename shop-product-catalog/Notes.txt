@@ -1,0 +1,21 @@
+
+
+
+------------------------------
+// shop-products-catalog api
+------------------------------
+
+1. Product
+    - id
+    - name
+    - price
+    - image
+    - make_date
+    - description
+
+2. Review
+    - stars
+    - body
+    - user
+
+---------------------------------

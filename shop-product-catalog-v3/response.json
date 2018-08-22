@@ -1,0 +1,23 @@
+{
+	"data": {
+		"product": {
+			"name": "Laptop",
+			"price": 198000.0,
+			"image": "images/Laptop.png",
+			"date": "2018-08-22",
+			"description": "New mac pro",
+			"reviews": [
+				{
+					"rating": 5,
+					"body": "i love this mac laptop",
+					"author": "nag@gmail.com"
+				},
+				{
+					"rating": 1,
+					"body": "i hate this mac laptop",
+					"author": "nag@gmail.com"
+				}
+			]
+		}
+	}
+}
