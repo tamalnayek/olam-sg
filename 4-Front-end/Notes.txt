@@ -1,0 +1,90 @@
+
+Front-end   ==> web-UI  
+
+-----------------------------------------------------------------------------
+- HTML    => content
+- CSS     => style/theming
+- Javascript => dynamic behav
+-----------------------------------------------------------------------------
+
+Ref : http://crockford.com/
+
+-----------------------------------------------------------------------------
+.js-intro
+
+    - scripting/programming lang for web-pages in browser-envi(client)
+    +
+    - server-side lang on Node.js
+
+-----------------------------------------------------------------------------
+.js features
+
+    - FP + OOP
+    - dynamic typing
+
+    - all IO operations are non-blocking by default
+    - single-threaded process, but supports concurrency becoz non-blocking IO
+
+-----------------------------------------------------------------------------
+
+How to run .js program ?
+
+    => using 'javascript runtime/engine'
+
+ at client-side ( browser ) envi
+
+    - chrome  ( v8  ) 
+    - firefox ( rhino ) 
+    - IE/Edge ( chakra )
+    - Safari  ( nitro )
+    ...
+
+ at desktop/server envi
+
+    - Node.js ( v8 )
+    - JVM     ( rhino / nashorn)
+    - ....
+
+-----------------------------------------------------------------------------
+
+ECMAScript community:
+
+    ==> ECMAScript spec
+
+    i.e javascript lang is based on ECMAScript spec   
+
+
+    latest version : ES6    
+
+
+-----------------------------------------------------------------------------
+
+"Hello World"
+
+-----------------------------------------------------------------------------
+
+
+
+JS topics
+-----------
+
+---------------------------------------------------------------------
+Level-1:
+
+    ==> data-types
+    ==> scopes
+    ==> FP & OOP 
+
+Level-2:
+
+    ==> ES6 new syntax & apis
+    ==> ES modules
+    ==> Async APIs
+
+Level-3 :
+
+    ==> Typescript
+    ==> Unit-Testing 
+    ==> Tools : webpack,karma ,protractor,..   
+
+---------------------------------------------------------------------        
