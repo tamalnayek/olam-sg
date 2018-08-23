@@ -7,7 +7,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,7 +29,7 @@ public class ProductController {
 
 
 	@PostMapping(consumes = { "application/xml", "application/json" })
-	public ResponseEntity<Product> createNewProduct(@RequestBody Product product, SecurityContext context) {
+	public ResponseEntity<Product> createNewProduct(@RequestBody Product product) {
 		product = productRepository.save(product);
 		ResponseEntity<Product> responseEntity = new ResponseEntity<Product>(product, HttpStatus.CREATED);
 		return responseEntity;
@@ -52,7 +51,6 @@ public class ProductController {
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<?> readProduct(@PathVariable int id,Principal principal) {
-		System.out.println(principal.getName());
 		Optional<Product> optional = productRepository.findById(id);
 		ResponseEntity<?> responseEntity = null;
 		if (optional.isPresent()) {
