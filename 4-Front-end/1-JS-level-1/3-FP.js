@@ -1,4 +1,4 @@
-
+"use strict"
 
 /*
 
@@ -218,3 +218,162 @@ Functional Programming
 // learnFunc()
 // learnFunc()
 // learnFunc();
+
+// ----------------------------------------------------------
+//  javascript function-closures
+// ----------------------------------------------------------
+/*
+    A closure is a function having access to the parent scope, 
+    even after the parent function has closed.
+*/
+
+// function teach(sub) {
+//     console.log('teaching ' + sub);
+//     let notes = sub + "-notes";
+//     function learn() {
+//         console.log('learning with ' + notes);
+//     }
+//     //learn();
+//     console.log('teaching ends..');
+//     return learn;
+// }
+
+// let learnFunc = teach('.js');
+
+// learnFunc();
+// learnFunc();
+
+/*
+
+    // why/where we need closures?
+
+    => to abstract public behav of any module to other modules
+
+    // e.g counter module
+
+        - count
+        - doCount()
+        - getCount()
+
+
+*/
+
+// self executable function
+
+// const counter = (function () {
+//     let count = 0; // private
+//     // public
+//     function doCount() {
+//         count++;
+//     }
+//     function getCount() {
+//         return count;
+//     }
+//     return {
+//         inc: doCount,
+//         get: getCount
+//     };
+// })();
+
+
+
+
+// ----------------------------------------------------------
+//  function binding   ( i.e executing function with object )
+// ----------------------------------------------------------
+
+/*
+
+    1. static function-binding
+    2. dynamic function-binding
+
+*/
+
+// ----------------------------------------------------------
+// 1. static function-binding
+// ----------------------------------------------------------
+
+
+// let person1 = {
+//     name: 'Nag',
+//     sayName: function () {
+//         console.log(`im ${this.name}`);
+//     }
+// };
+// let person2 = {
+//     name: 'Jai',
+//     sayName: function () {
+//         console.log(`im ${this.name}`);
+//     }
+// };
+
+
+function sayNameForAll() {
+    console.log(`im ${this.name}`);
+}
+
+let person1 = {
+    name: 'Nag',
+    sayName: sayNameForAll // static function binding
+};
+let person2 = {
+    name: 'Jai',
+    sayName: sayNameForAll
+};
+// sayNameForAll(); // im ??  // error becox here function not bound to any person
+person1.sayName(); // im Nag
+person2.sayName(); // im Jai
+
+
+
+// ----------------------------------------------------------
+// 2. dynamic function-binding
+// ----------------------------------------------------------
+
+
+let e1 = { name: 'Mathew' }
+let e2 = { name: 'sankar' }
+
+
+let tng = {
+    learnJava: function () {
+        console.log(this.name + " learning java");
+    }
+};
+
+// e1.learnJava = tng.learnJava;// static function-binding
+// e1.learnJava();
+
+// tng.learnJava.call(e1); // dynamic function binding
+// tng.learnJava.call(e2);
+
+
+// ----------------------------------------------------------
+// simple js-app
+// ----------------------------------------------------------
+function Trainer(name) {
+    this.name = name;
+    this.doTeach = function (sub) {
+        console.log(`${this.name} teaching ${sub}`);
+        let notes = `${sub}-notes`;
+        let doLearn = function () {
+            console.log(`${this.name} learning with ${notes}`);
+        }
+        console.log(`teaching ends...`);
+        return doLearn;
+    }
+}
+function Emploee(name) {
+    this.name = name;
+}
+function sessionStart() {
+    const tnr = new Trainer('Nag');
+    const e1 = new Emploee('Jai');
+    const e2 = new Emploee('Mathew');
+    const e3 = new Emploee('Sankar');
+    let learnJavaFunc = tnr.doTeach('java');
+    learnJavaFunc.call(e1);
+    learnJavaFunc.call(e2);
+    learnJavaFunc.call(e3);
+}
+sessionStart();

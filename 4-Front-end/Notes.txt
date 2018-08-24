@@ -1,6 +1,6 @@
 
+-----------------------------------------------------------------------------
 Front-end   ==> web-UI  
-
 -----------------------------------------------------------------------------
 - HTML    => content
 - CSS     => style/theming
@@ -88,3 +88,21 @@ Level-3 :
     ==> Tools : webpack,karma ,protractor,..   
 
 ---------------------------------------------------------------------        
+
+.js is
+
+    - all IO operations are non-blocking by default
+    - single-threaded process, but supports concurrency becoz non-blocking IO
+
+--------------------------------------------------------------
+
+browser e.g chrome
+
+    1. javascript runtime ( v8 )     : based on ECMAScript spec
+        - single-call-stack   => to execute functions
+        - heap                => to hold objects
+    2. web-apis ( DOM, XHR, Timer , HTML5 apis )    : basesed on w3c spec 
+    3. event-queue
+    4. event-loop   
+
+--------------------------------------------------------------    

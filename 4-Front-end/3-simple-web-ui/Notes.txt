@@ -1,0 +1,122 @@
+
+
+
+
+  -----------------------------------------------------------  
+  web-ui
+  -----------------------------------------------------------
+
+   HTML - content
+   CSS  - style
+   Javascript - ??
+
+
+
+what .js-lang can do with HTML-page in browser-envi?
+
+  
+using browser provided web-APIs,
+JavaScript-lang can bring any dynamic activity/data to web-page
+  
+browser-APIs :  ==> are based on 'w3c' recommendations ,
+implemented nativly by browser & abstracted as JavaScript objects & functions
+
+browser-APIs  :
+    ==> DOM, XHR,Timer,....
+
+using DOM api
+---------------
+ -> can create,retreive,update,delete HTML elements in page
+ -> can change element's inner text/html content 
+ -> can change element's attributes/properties
+ -> can change element's styles ( css )
+ -> can validate form-fields before submit to server-side-program
+ -> can create rich UI-components like
+  .......
+
+using Timer api
+------------------
+ -> can execute any action on timeout/time-interval
+
+using XHR api
+---------------
+ -> can communicate with server-side programs async ( AJAX )  
+
+
+HTML5 APIs
+-------------
+
+   Ref : https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+
+------------------------------------------------------------------------   
+
+problems with plain-js ( your-code ) with browser apis
+
+  ==> browser compatability issues
+     soln : using jQuery lib  ( provides solutions for DOM & XHR compatality issues)
+  ==> memory management issues   ( i.e clean un-used DOM elements )
+  ==> performance issues         ( i.e DOM access must be minimal)
+  ==> too much code even for simple operations
+  ==> data-binding is manual
+  ==> code oaganization ( separating view & model ) is difficult
+
+------------------------------------------------------------------------   
+
+  legacy soln : using server-side page technolgies
+
+      => JSP,ASP,PHP,...
+
+  problems with server-side page technolgies
+
+   => on every request, server-side-programs must re-costruct same layout again & again with new content
+   => on every response , server usually serve same static resources ( images, css , js , font..) , that increase n/w bandwidth
+   => on every response, browser always re-loads current page with new-page
+
+------------------------------------------------------------------------   
+
+best soln :
+      ==> using browser side page technologies
+
+     how ?
+
+        => using third-party's js lib & F.Ws
+
+      1st gen 
+      -----------
+
+        MVC arch based javascript f.ws and lib
+
+        1. knockout.js
+        2. backbone.js
+        3. AngularJS 1.x from google-team  
+        4. Ember.js
+        5. DOJO 
+        6. EXTJS from sencha
+        ....
+
+
+      w3c ==>  web components ( custom-tag ) spec  ( draft ) 
+
+      2nd gen
+      ------------
+
+      JS lib  & F.W based component/custom-tag/ui-elements  based arch
+
+        1. React.js  from facebook
+        2. Angular
+        3. Vue.js
+        4. Polymer.js
+        ...
+
+  
+
+------------------------------------------------------------------------     
+
+
+
+
+
+
+
+

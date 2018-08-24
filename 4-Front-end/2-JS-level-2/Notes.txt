@@ -1,0 +1,16 @@
+
+
+
+
+ ES6  - New  syntax
+ --------------------
+
+
+ - string interpolation
+ - let & const keywords with block-scope
+ - function with default & rest params
+ - OO with class syntax
+ - obj-literal enhancements
+ - destructuring
+ - spread operator
+ - arrow-function
