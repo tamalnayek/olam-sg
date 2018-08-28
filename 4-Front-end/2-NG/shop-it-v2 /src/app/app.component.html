@@ -1,0 +1,16 @@
+<div class="container">
+    <hr/>
+    <h1>{{title}}</h1>
+    <hr/>
+    <i class="fa fa-shopping-cart"></i> {{cartItemsCount}} item(s) in cart |
+    <a href (click)="toggleCart($event)">{{isCartOpen?'view products':'view cart'}}</a>
+    <hr/>
+    <app-view-cart *ngIf="isCartOpen" [cart]="cart"></app-view-cart>
+    <hr/>
+    <div class="list-group" *ngIf="!isCartOpen" >
+        <div *ngFor="let item of items|slice:0:2" class="list-group-item">
+            <app-item [value]="item" (buy)="addToCart($event)">
+            </app-item>
+        </div>
+    </div>
+</div>

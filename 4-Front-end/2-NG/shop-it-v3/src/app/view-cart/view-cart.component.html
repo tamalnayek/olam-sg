@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">Items in cart</div>
+  <div class="card-body">
+    <table class="table table-bordered table-sm">
+      <tbody>
+        <tr *ngFor="let line of itemLines">
+          <td>{{line.item.id}}</td>
+          <td>{{line.item.name}}</td>
+          <td>{{line.item.price|currency:'INR'}}</td>
+          <td>{{line.qty}}</td>
+          <td>{{line.qty*line.item.price|currency:'INR'}}</td>
+        </tr>
+      </tbody>
+    </table>
+    Total Amount : {{totalAmount|currency:'INR'}}
+  </div>
+</div>

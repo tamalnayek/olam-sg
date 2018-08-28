@@ -1,0 +1,16 @@
+{
+  "name": "async-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.promise-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reactivex/rxjs": "^6.2.2",
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2"
+  }
+}

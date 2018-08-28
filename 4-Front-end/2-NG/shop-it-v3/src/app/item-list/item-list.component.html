@@ -1,0 +1,4 @@
+<div *ngFor="let item of items|slice:0:2" class="list-group-item">
+  <app-item [value]="item" (buy)="addToCart($event)">
+  </app-item>
+</div> 

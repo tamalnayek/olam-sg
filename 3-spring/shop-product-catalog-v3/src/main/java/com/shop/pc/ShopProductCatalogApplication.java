@@ -15,4 +15,5 @@ public class ShopProductCatalogApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ShopProductCatalogApplication.class, args); // create context
 	}
+	
 }

@@ -1,0 +1,28 @@
+
+
+
+
+   module-1  ( UI )                   module-2 ( Non-UI i.e service logic)
+
+            ------------------------->
+            <---------------------------    
+
+
+
+    types of communications
+
+
+      -> sync  ( blocks current module )
+      -> async ( non-blocking )
+
+
+------------------------------------------
+
+how to implement async communications b/w 2 js-modules ?
+
+2 ways
+
+    => using promise-api ( es6 )
+    => RxJS ( Reactive eXtensions in JavaScript)  
+
+----------------------------------------------------    

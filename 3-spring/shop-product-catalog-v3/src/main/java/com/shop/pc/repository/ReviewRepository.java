@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import com.shop.pc.model.Review;
 
-//@RepositoryRestResource
+@RepositoryRestResource
 public interface ReviewRepository extends JpaRepository<Review, Integer> {
 
 //	@Query(value = "select * from REVIEW where product_id=?1", nativeQuery = true) // SQL  ==> based on relational model

@@ -1,0 +1,59 @@
+
+
+
+
+   ui-component ==> .ts + .html + .css
+
+
+   ------------------------------------------- 
+   1. data-binding
+   -------------------------------------------
+
+    ==> how to bind input/output data from/to UI
+
+
+    4 ways
+
+    1. interpolation
+
+        syntax: in component's template
+
+        {{expression}}
+
+    2. property binding
+
+        syntax: in component's template
+
+        <element [prop]="expression"/>
+
+   3. event-binding
+
+        syntax: in component's template
+
+        <element (event)="handler()"/> 
+
+   ------------------------------------------- 
+   2. directives
+   -------------------------------------------
+
+     ==> provides js functionality to template   
+
+   types
+
+    1. structural directives   ==> change structure of component's template 
+
+        syntax:
+
+            <element *directiveName=""/> 
+
+            e.g *ngIf, *ngFor, *ngSwicth, ...
+
+
+
+   ------------------------------------------- 
+   3. pipes
+   -------------------------------------------
+    
+
+    ==> to tranform model-data to template
+
