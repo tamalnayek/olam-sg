@@ -43,7 +43,7 @@ public class ProductController {
 		if (optional.isPresent())
 			return new ResponseEntity<Product>(optional.get(), HttpStatus.OK);
 		else
-			return new ResponseEntity<String>("product not exist", HttpStatus.NOT_FOUND);
+			return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
 	}
 
 	@PutMapping(value = "{id}")
@@ -55,7 +55,7 @@ public class ProductController {
 	@DeleteMapping(value = "{id}")
 	public ResponseEntity<String> deleteOne(@PathVariable int id) {
 		productRepository.deleteById(id);
-		return new ResponseEntity<String>("product deleted", HttpStatus.OK);
+		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 
 }
