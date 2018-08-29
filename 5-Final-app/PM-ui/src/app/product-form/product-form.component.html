@@ -1,0 +1,33 @@
+
+<div class="row">
+	<div class="col-12 col-sm-12 col-md-5">
+		<div class="card">
+			<div class="card-header">Product Form  - <span class="bg bg-light">{{id}}</span></div>
+			<div class="card-body">
+				<form [formGroup]="productForm" (submit)="handleForm()">
+					<div class="form-group" *ngIf="!editing">
+						<label>Id</label>
+						<input class="form-control" formControlName="id"/>
+					</div>
+					<div class="form-group">
+						<label>Name</label>
+						<input class="form-control" formControlName="name"/>
+					</div>
+					<div class="form-group">
+						<label>Price</label>
+						<input class="form-control" formControlName="price"/>
+					</div>
+					<div class="form-group">
+						<label>Date</label>
+						<input class="form-control" formControlName="date"/>
+					</div>
+					<div class="form-group">
+						<label>Description</label>
+						<textarea class="form-control" formControlName="description"></textarea>
+					</div>
+					<button class="btn btn-dark">submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

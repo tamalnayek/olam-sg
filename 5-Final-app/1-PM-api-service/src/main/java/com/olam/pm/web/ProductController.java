@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.olam.pm.model.Product;
 import com.olam.pm.repository.ProductRepository;
 
+@CrossOrigin(origins = { "*" })
 @RestController
 @RequestMapping("/v1/api/products")
 public class ProductController {
@@ -34,6 +36,12 @@ public class ProductController {
 	@GetMapping
 	public ResponseEntity<List<Product>> get() {
 		List<Product> products = productRepository.findAll();
+		// for intentional response delay
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		return new ResponseEntity<List<Product>>(products, HttpStatus.OK);
 	}
 
