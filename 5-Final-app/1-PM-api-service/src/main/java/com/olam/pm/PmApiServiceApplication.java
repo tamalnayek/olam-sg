@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class PmApiServiceApplication {
 
+	// im Nag
 	public static void main(String[] args) {
 		SpringApplication.run(PmApiServiceApplication.class, args);
 	}
