@@ -30,40 +30,34 @@ public class ProductController {
 	@PostMapping
 	public ResponseEntity<Product> create(@RequestBody Product product) {
 		product = productRepository.save(product);
-		return new ResponseEntity<Product>(product, HttpStatus.CREATED);
+		return new ResponseEntity<>(product, HttpStatus.CREATED);
 	}
 
 	@GetMapping
 	public ResponseEntity<List<Product>> get() {
 		List<Product> products = productRepository.findAll();
-		// for intentional response delay
-//		try {
-//			Thread.sleep(5000);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-		return new ResponseEntity<List<Product>>(products, HttpStatus.OK);
+		return new ResponseEntity<>(products, HttpStatus.OK);
 	}
 
 	@GetMapping(value = "{id}")
 	public ResponseEntity<?> getOne(@PathVariable int id) {
 		Optional<Product> optional = productRepository.findById(id);
 		if (optional.isPresent())
-			return new ResponseEntity<Product>(optional.get(), HttpStatus.OK);
+			return new ResponseEntity<>(optional.get(), HttpStatus.OK);
 		else
-			return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 
 	@PutMapping(value = "{id}")
 	public ResponseEntity<Product> update(@PathVariable int id, @RequestBody Product product) {
 		product = productRepository.save(product);
-		return new ResponseEntity<Product>(product, HttpStatus.OK);
+		return new ResponseEntity<>(product, HttpStatus.OK);
 	}
 
 	@DeleteMapping(value = "{id}")
 	public ResponseEntity<String> deleteOne(@PathVariable int id) {
 		productRepository.deleteById(id);
-		return new ResponseEntity<String>(HttpStatus.OK);
+		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
 }
