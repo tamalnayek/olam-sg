@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-12 offset-12 col-sm-6 offset-sm-3 col-md-4 md-offset-4">
+    <div class="card">
+      <div class="card-header">Contract Confirmation</div>
+      <div class="card-body">
+        <form [formGroup]="contractForm" (submit)="handleFormSubmit($event)">
+          <div class="form-group">
+            <label>Company</label>
+            <select class="form-control" formControlName="company">
+              <option *ngFor="let company of companyList" [value]="company.code">{{company.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Product</label>
+            <select class="form-control" formControlName="product">
+              <option *ngFor="let product of productList" [value]="product.code">{{product.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Origin</label>
+            <select class="form-control" formControlName="country">
+              <option *ngFor="let country of countryList" [value]="country.code">{{country.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Market</label>
+            <select class="form-control" formControlName="market">
+                <option *ngFor="let market of marketList" [value]="market.code">{{market.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Quntity</label>
+            <input class="form-control" formControlName="quantity"/>
+          </div>
+          <div class="form-group">
+            <label>Price</label>
+            <input class="form-control" formControlName="price"/>
+          </div>
+          <div class="form-group">
+            <label>Trader</label>
+            <input class="form-control" readonly  formControlName="trader"/>
+          </div>
+          <div class="form-group">
+            <label>Order</label>
+            <input class="form-control" readonly formControlName="order"/>
+          </div>
+          <button [disabled]="disabled" class="btn btn-primary">submit</button>
+          &nbsp;
+          <button class="btn btn-danger">cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
